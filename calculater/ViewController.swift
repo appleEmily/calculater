@@ -23,6 +23,93 @@ class ViewController: UIViewController {
         result.text = String(number1)
         
     }
+    @IBAction func two() {
+        number1 = number1 * 10 + 2
+        result.text = String(number1)
+    }
+    
+    @IBAction func three() {
+        number1 = number1 * 10 + 3
+        result.text = String(number1)
+    }
+    
+    @IBAction func four() {
+        number1 = number1 * 10 + 4
+        result.text = String(number1)
+    }
+    @IBAction func five() {
+        number1 = number1 * 10 + 5
+        result.text = String(number1)
+    }
+    @IBAction func six() {
+        number1 = number1 * 10 + 6
+        result.text = String(number1)
+    }
+    @IBAction func seven() {
+        number1 = number1 * 10 + 7
+        result.text = String(number1)
+    }
+    @IBAction func eight() {
+        number1 = number1 * 10 + 8
+        result.text = String(number1)
+    }
+    @IBAction func nine() {
+        number1 = number1 * 10 + 9
+        result.text = String(number1)
+    }
+    
+    @IBAction func plus() {
+        number2 = number1
+        number1 = 0
+        ope = 1
+    }
+    
+    @IBAction func minus() {
+        number2 = number1
+        number1 = 0
+        ope = 2
+    }
+    
+    @IBAction func multiply() {
+        number2 = number1
+        number1 = 0
+        ope = 3
+    }
+    @IBAction func devide() {
+        number2 = number1
+        number1 = 0
+        ope = 4
+    }
+    
+    
+    
+    @IBAction func equal() {
+        if ope == 1{
+            number3 = number2 + number1
+        }
+        else if ope == 2 {
+            number3 = number2 - number1
+        }
+        else if ope == 3 {
+            number3 = number2 * number1
+        }
+        else if ope == 4 {
+            number3 = number2 / number1
+        }
+        result.text = String(number3)
+        result.textColor = UIColor.red
+    }
+    
+    @IBAction func clear() {
+        number1 = 0
+        number2 = 0
+        number3 = 0
+        result.text = String(number1)
+        result.text = String(number2)
+        result.text = String(number3)
+        result.textColor = UIColor.black
+    }
+    
     
     
     
